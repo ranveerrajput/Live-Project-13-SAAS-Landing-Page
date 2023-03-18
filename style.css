@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&family=Roboto:wght@100;900&display=swap');
+
+*{
+    margin  : 0;
+    padding : 0;
+    outline : 0;
+}
+
+
+/* header-section */
+
+header{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(129, 43, 203);
+}
+
+.header-section{
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 18px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header-section ul{
+    position: relative;
+    margin-left: 200px;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-item{
+    color : #ffffff;
+    margin-right: 50px;
+}
+
+.nav-item-active{
+    color : rgb(109, 163, 249);
+}
+
+.logo{
+    margin-left: 70px;
+    width: 130px;
+}
+
+.btn{
+    position: relative;
+    padding : 15px 25px;
+    margin-right: 25px;
+    color : #ffffff;
+    background-color: rgb(107, 192, 241);
+    border : none;
+}
+
+.sub-header{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-bottom: 165px;
+}
+
+.sub-left-section{
+    color : #ffffff;
+    display: flex;
+    flex-direction: column;   
+    font-family: Roboto;
+    margin-left: 20px;
+}
+
+.sub-left-heading{
+    font-weight: 700;
+    font-size: 60px;
+   
+    
+}
+
+.sub-left-sub-heading{
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+.sub-header img{
+    width : 600px;  
+}
+
+/* main-section */
+
+.main{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.main-right-heading{
+   
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.right-card{
+    font-family: Roboto;
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.right-card-desc{
+    font-family: sans-serif;
+    margin-top: 8px;
+    width: 350px;
+    font-weight: 500;
+}
+
+/* footer-section */
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.ft-top-section{
+    font-size: 20px;
+    font-family: Roboto;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.ft-cards{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.ft-card-desc{
+    margin-top: 20px;
+    width: 250px;
+    text-align: center;
+}
+
+.ft-cards img{
+    margin-top: 30px;
+    width : 100px;
+    margin-left: 60px;
+  
+}
+
+.ft-card h3{
+    margin-top: 15px;
+    font-weight: 10;
+}
+
+.ft-card{
+    height: 250px;
+    border-radius: 10px;
+    margin-right: 25px;
+    box-shadow: 1px 1px 3px #1d1d1d;
+}
+
+.ft-active{
+    color : #ffffff;
+    background-color: rgb(129, 43, 203);
+    border-radius: 10px;
+    height: 113px;
+    width: 249px;
+}
+
+@media screen and (max-width : 900px){
+    body{
+        overflow-x: hidden;
+    }
+    
+    /* header-section */
+    
+    .header-section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .header-section ul{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav-item{
+        margin-top: 35px;
+    }
+
+    .header-section .btn{
+        margin-top: 35px;
+    }
+
+    ul li{
+        
+        width: 300px;
+        text-align: center;
+        margin-left: -150px;
+    }
+    .logo{
+        margin-left: -10px;
+    }
+
+    /* sub-header */
+    .sub-header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .sub-header .img{
+        margin-top: 50px;
+    }
+
+    /* main-section */
+    .main{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .ft-cards{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .ft-card{
+        margin-top: 45px;
+    }
+
+}
